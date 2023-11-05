@@ -11,7 +11,7 @@ fi
 OUTPUT=".HamsterInputSchemas"
 mkdir -p Resources/SharedSupport
 rm -rf $OUTPUT && (
-    git clone --depth 1 https://github.com/imfuxiao/HamsterInputSchemas.git $OUTPUT
+    git clone --depth 1 https://github.com/dieterplex/HamsterInputSchemas.git $OUTPUT
     cd $OUTPUT
     make
 ) && cp $OUTPUT/SharedSupport.zip Resources/SharedSupport/
