@@ -1,0 +1,31 @@
+"main.title" = "輸入法設置";
+"main.load_app_data.migrating_v1_data" = "遷移 1.0 配置中……";
+"main.load_app_data.migrated" = "遷移完成";
+"main.load_app_data.initialize" = "初次啓動，需要編譯輸入方案，請耐心等待……";
+"main.load_app_data.deployed" = "部署完成";
+"main.load_app_data.error" = "導入數據異常";
+
+"main.favbtn.redeploy" = "重新部署";
+"main.favbtn.sync" = "RIME同步";
+"main.favbtn.backup" = "應用備份";
+
+"main.solution.title" = "輸入相關";
+"main.solution.settings" = "輸入方案設置";
+"main.solution.upload" = "輸入方案上傳";
+"main.solution.file_management" = "方案檔案管理";
+
+"main.keyboard.title" = "鍵盤相關";
+"main.keyboard.settings" = "鍵盤設置";
+"main.keyboard.scheme" = "鍵盤配色";
+"main.keyboard.feedback" = "按鍵音與震動";
+
+"main.syncbackup.title" = "同步與備份";
+"main.syncbackup.icloud" = "iCloud同步";
+"main.syncbackup.backup" = "軟體備份";
+
+"main.rime.text" = "RIME";
+"main.about.text" = "關於";
+
+"main.enabled" = "開啟";
+"main.disabled" = "關閉";
+
