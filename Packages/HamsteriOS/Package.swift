@@ -18,6 +18,7 @@ let package = Package(
     .package(url: "https://github.com/relatedcode/ProgressHUD.git", exact: "14.1.0"),
     .package(url: "https://github.com/simonbs/Runestone.git", exact: "0.3.0"),
     .package(url: "https://github.com/simonbs/TreeSitterLanguages.git", exact: "0.1.7"),
+    .package(url: "https://github.com/SwiftGen/SwiftGenPlugin", from: "6.6.2"),
     .package(path: "../HamsterUIKit"),
     .package(path: "../HamsterKit"),
     .package(path: "../RimeKit"),
@@ -43,7 +44,10 @@ let package = Package(
         "HamsterFileServer",
       ],
       path: "Sources",
-      resources: [.process("Resources")]
+      resources: [.process("Resources")],
+      plugins: [
+        .plugin(name: "SwiftGenPlugin", package: "SwiftGenPlugin")
+      ]
     ),
     .testTarget(
       name: "HamsteriOSTests",
