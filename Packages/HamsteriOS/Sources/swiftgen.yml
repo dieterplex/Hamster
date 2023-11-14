@@ -1,0 +1,11 @@
+# v6.6.2
+output_dir: ./Generated/
+
+strings:
+  inputs: ./Resources/zh.lproj/
+  filter: .+\.strings$
+  outputs:
+  - templateName: structured-swift5
+    output: strings_ios.swift
+    params:
+      publicAccess: true
