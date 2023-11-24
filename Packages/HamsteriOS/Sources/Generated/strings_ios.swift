@@ -115,6 +115,66 @@ public enum L10n {
     /// 键盘反馈
     public static let title = L10n.tr("Localizable", "feedback.title", fallback: "键盘反馈")
   }
+  public enum Finder {
+    public enum Action {
+      /// 拷贝键盘词库文件至应用
+      public static let copyUserdb = L10n.tr("Localizable", "finder.action.copy_userdb", fallback: "拷贝键盘词库文件至应用")
+      /// 使用键盘文件覆盖应用文件
+      public static let overwriteKeyboard = L10n.tr("Localizable", "finder.action.overwrite_keyboard", fallback: "使用键盘文件覆盖应用文件")
+    }
+    public enum CopyUserdb {
+      /// 拷贝中……
+      public static let copying = L10n.tr("Localizable", "finder.copy_userdb.copying", fallback: "拷贝中……")
+      /// 指后缀为“.txt”及文件夹名包含“.userdb”下的文件
+      public static let remark = L10n.tr("Localizable", "finder.copy_userdb.remark", fallback: "指后缀为“.txt”及文件夹名包含“.userdb”下的文件")
+      /// 拷贝词库成功
+      public static let success = L10n.tr("Localizable", "finder.copy_userdb.success", fallback: "拷贝词库成功")
+    }
+    public enum Delete {
+      /// 文件删除后无法恢复，确认删除？
+      public static let alertMessage = L10n.tr("Localizable", "finder.delete.alert_message", fallback: "文件删除后无法恢复，确认删除？")
+      /// 是否删除？
+      public static let alertTitle = L10n.tr("Localizable", "finder.delete.alert_title", fallback: "是否删除？")
+      /// 删除
+      public static let title = L10n.tr("Localizable", "finder.delete.title", fallback: "删除")
+    }
+    public enum Editor {
+      public enum Save {
+        /// 保存失败
+        public static let failed = L10n.tr("Localizable", "finder.editor.save.failed", fallback: "保存失败")
+        /// 保存成功
+        public static let success = L10n.tr("Localizable", "finder.editor.save.success", fallback: "保存成功")
+        /// 保存
+        public static let title = L10n.tr("Localizable", "finder.editor.save.title", fallback: "保存")
+      }
+    }
+    public enum ICloudDoc {
+      /// iCloud异常
+      public static let warning = L10n.tr("Localizable", "finder.i_cloud_doc.warning", fallback: "iCloud异常")
+    }
+    public enum Overwrite {
+      /// 覆盖后应用文件无法恢复，确认覆盖？
+      public static let alertMessage = L10n.tr("Localizable", "finder.overwrite.alert_message", fallback: "覆盖后应用文件无法恢复，确认覆盖？")
+      /// 是否覆盖？
+      public static let alertTitle = L10n.tr("Localizable", "finder.overwrite.alert_title", fallback: "是否覆盖？")
+    }
+    public enum OverwriteKeyboard {
+      /// 覆盖中……
+      public static let overwriting = L10n.tr("Localizable", "finder.overwrite_keyboard.overwriting", fallback: "覆盖中……")
+      /// 完成
+      public static let success = L10n.tr("Localizable", "finder.overwrite_keyboard.success", fallback: "完成")
+    }
+    public enum Tag {
+      /// 应用文件
+      public static let app = L10n.tr("Localizable", "finder.tag.app", fallback: "应用文件")
+      /// 通用
+      public static let general = L10n.tr("Localizable", "finder.tag.general", fallback: "通用")
+      /// iCloud文件
+      public static let iCloud = L10n.tr("Localizable", "finder.tag.i_cloud", fallback: "iCloud文件")
+      /// 键盘文件
+      public static let keyboard = L10n.tr("Localizable", "finder.tag.keyboard", fallback: "键盘文件")
+    }
+  }
   public enum Main {
     /// 禁用
     public static let disabled = L10n.tr("Localizable", "main.disabled", fallback: "禁用")

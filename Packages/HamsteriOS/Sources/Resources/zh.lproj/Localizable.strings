@@ -109,3 +109,24 @@
 "feedback.haptic_permission" = "开启震动需要为键盘开启“完全访问权限”";
 "feedback.sound" = "开启按键声";
 "feedback.title" = "键盘反馈";
+
+"finder.action.copy_userdb" = "拷贝键盘词库文件至应用";
+"finder.action.overwrite_keyboard" = "使用键盘文件覆盖应用文件";
+"finder.i_cloud_doc.warning" = "iCloud异常";
+"finder.tag.general" = "通用";
+"finder.tag.app" = "应用文件";
+"finder.tag.keyboard" = "键盘文件";
+"finder.tag.i_cloud" = "iCloud文件";
+"finder.delete.title" = "删除";
+"finder.delete.alert_title" = "是否删除？";
+"finder.delete.alert_message" = "文件删除后无法恢复，确认删除？";
+"finder.overwrite.alert_title" = "是否覆盖？";
+"finder.overwrite.alert_message" = "覆盖后应用文件无法恢复，确认覆盖？";
+"finder.editor.save.title" = "保存";
+"finder.editor.save.success" = "保存成功";
+"finder.editor.save.failed" = "保存失败";
+"finder.copy_userdb.remark" = "指后缀为“.txt”及文件夹名包含“.userdb”下的文件";
+"finder.copy_userdb.copying" = "拷贝中……";
+"finder.copy_userdb.success" = "拷贝词库成功";
+"finder.overwrite_keyboard.overwriting" = "覆盖中……";
+"finder.overwrite_keyboard.success" = "完成";

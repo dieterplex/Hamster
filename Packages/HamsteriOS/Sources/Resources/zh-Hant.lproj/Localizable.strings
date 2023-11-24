@@ -109,3 +109,24 @@
 "feedback.haptic_permission" = "開啟震動需要為鍵盤開啟“完全存取權限”";
 "feedback.sound" = "開啟按鍵聲";
 "feedback.title" = "鍵盤回饋";
+
+"finder.action.copy_userdb" = "拷貝鍵盤詞庫檔案到App";
+"finder.action.overwrite_keyboard" = "使用鍵盤檔案覆蓋App檔案";
+"finder.i_cloud_doc.warning" = "iCloud異常";
+"finder.tag.general" = "一般";
+"finder.tag.app" = "App檔案";
+"finder.tag.keyboard" = "鍵盤檔案";
+"finder.tag.i_cloud" = "iCloud檔案";
+"finder.delete.title" = "刪除";
+"finder.delete.alert_title" = "是否刪除？";
+"finder.delete.alert_message" = "檔案刪除後無法恢復，確詳恢復除？";
+"finder.overwrite.alert_title" = "是否覆蓋？";
+"finder.overwrite.alert_message" = "覆蓋後App檔案無法恢復，確詳覆蓋？";
+"finder.editor.save.title" = "保存";
+"finder.editor.save.success" = "保存成功";
+"finder.editor.save.failed" = "保存失敗";
+"finder.copy_userdb.remark" = "指副檔名为“.txt”及目錄名包含“.userdb”下的文件";
+"finder.copy_userdb.copying" = "拷貝中……";
+"finder.copy_userdb.success" = "拷貝詞庫成功";
+"finder.overwrite_keyboard.overwriting" = "覆蓋中……";
+"finder.overwrite_keyboard.success" = "完成";
