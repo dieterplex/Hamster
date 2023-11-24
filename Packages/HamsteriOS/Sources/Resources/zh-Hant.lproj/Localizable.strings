@@ -50,6 +50,8 @@
 "about.reset_successfully" = "重置成功";
 
 "common.copy_successfully" = "複製成功";
+"common.confirm" = "確認";
+"common.cancel" = "取消";
 
 "rime.simp_trad_swtich.title" = "簡繁切換";
 "rime.simp_trad_swtich.footer" = "配置檔案中`switches`簡繁轉換選項的設定名稱，倉用於中文簡體與繁體之間快速切換。";
@@ -83,3 +85,22 @@
 "rime.reset.alert_title" = "RIME 重置";
 "rime.reset.alert_message" = "重置會恢復到初始安裝狀態，是否確認重置？";
 "rime.reset.alert_confirm" = "重置";
+
+"backup.title" = "備份與恢復";
+"backup.backup.title" = "軟體備份";
+"backup.backup.backing_up" = "軟體備份中，請等待……";
+"backup.backup.success" = "備份成功";
+"backup.backup.failed" = "備份失敗";
+"backup.delete.title" = "刪除";
+"backup.delete.alert_title" = "是否刪除？";
+"backup.delete.alert_message" = "檔案刪除後無法恢復，確認刪除？";
+"backup.delete.error_title" = "刪除檔案";
+"backup.delete.error_message" = "刪除失敗";
+"backup.restore.title" = "恢復";
+"backup.restore.restoring" = "恢復中，請等待……";
+"backup.restore.success" = "恢復成功，請重新部署。";
+"backup.restore.failed" = "恢复失敗";
+"backup.rename.title" = "修改名稱";
+"backup.rename.alert_title" = "修改備份檔案名稱";
+"backup.rename.new_name" = "新檔案名稱";
+"backup.remark" = "1. 向左滑動操作檔案；\n2. 軟體恢復後,請手動執行“重新部署”；";
