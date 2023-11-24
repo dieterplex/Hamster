@@ -104,3 +104,8 @@
 "backup.rename.alert_title" = "修改备份文件名称";
 "backup.rename.new_name" = "新文件名称";
 "backup.remark" = "1. 向左划动操作文件；\n2. 软件恢复后,请手动执行“重新部署”；";
+
+"feedback.haptic" = "按键震动";
+"feedback.haptic_permission" = "开启震动需要为键盘开启“完全访问权限”";
+"feedback.sound" = "开启按键声";
+"feedback.title" = "键盘反馈";

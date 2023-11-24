@@ -105,6 +105,16 @@ public enum L10n {
     /// 复制成功
     public static let copySuccessfully = L10n.tr("Localizable", "common.copy_successfully", fallback: "复制成功")
   }
+  public enum Feedback {
+    /// 按键震动
+    public static let haptic = L10n.tr("Localizable", "feedback.haptic", fallback: "按键震动")
+    /// 开启震动需要为键盘开启“完全访问权限”
+    public static let hapticPermission = L10n.tr("Localizable", "feedback.haptic_permission", fallback: "开启震动需要为键盘开启“完全访问权限”")
+    /// 开启按键声
+    public static let sound = L10n.tr("Localizable", "feedback.sound", fallback: "开启按键声")
+    /// 键盘反馈
+    public static let title = L10n.tr("Localizable", "feedback.title", fallback: "键盘反馈")
+  }
   public enum Main {
     /// 禁用
     public static let disabled = L10n.tr("Localizable", "main.disabled", fallback: "禁用")
