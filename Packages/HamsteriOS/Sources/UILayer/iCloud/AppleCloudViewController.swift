@@ -29,7 +29,7 @@ class AppleCloudViewController: NibLessViewController {
 
 extension AppleCloudViewController {
   override func loadView() {
-    title = "iCloud同步"
+    title = L10n.Main.Syncbackup.icloud
     let viewModel = appleCloudViewModelFactory.makeAppleCloudViewModel()
     view = AppleCloudRootView(viewModel: viewModel)
   }
