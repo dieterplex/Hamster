@@ -217,3 +217,23 @@
 "k_b.layout_action.import.failed" = "自定义键盘配置文件加载失败";
 "k_b.layout_action.settings" = "设置";
 
+"k_b.layout_zh26.segment_prefs" = "设置";
+"k_b.layout_zh26.segment_swipe" = "划动设置";
+"k_b.layout_zh26.swipe_key.add_key_swipe_action" = "新增滑动Action";
+"k_b.layout_zh26.swipe_key.title" = "字符";
+"k_b.layout_zh26.swipe_key.submit" = "保存";
+"k_b.layout_zh26.swipe_key.delete" = "删除";
+"k_b.layout_zh26.swipe_key.key_exist" = "%@已经存在";
+
+"k_b.layout_zh26.displaySemicolonButton" = "启用分号按键";
+"k_b.layout_zh26.displayClassifySymbolButton" = "启用符号按键";
+"k_b.layout_zh26.displayChineseEnglishSwitchButton" = "启用中英切换按键";
+"k_b.layout_zh26.switch_on_left_of_space" = "按键位于空格左侧";
+"k_b.layout_zh26.switch_on_left_of_space_remark" = "“按键位于空格左侧”选项：关闭状态则位于空格右侧，开启状态则位于空格左侧";
+
+"k_b.layout_zh26.displaySpaceLeftButton" = "启用空格左侧按键";
+"k_b.layout_zh26.spaceLeftButtonProcessByRIME" = "左侧按键由RIME处理";
+"k_b.layout_zh26.keyValueOfSpaceLeftButton" = "左侧按键键值";
+"k_b.layout_zh26.displaySpaceRightButton" = "启用空格右侧按键";
+"k_b.layout_zh26.spaceRightButtonProcessByRIME" = "右侧按键由RIME处理";
+"k_b.layout_zh26.keyValueOfSpaceRightButton" = "右侧按键键值";

@@ -123,7 +123,7 @@ class KeySwipeSettingsViewController: NibLessViewController {
   }
 
   override func loadView() {
-    title = "划动设置"
+    title = L10n.KB.LayoutZh26.segmentSwipe
     self.view = rootView
 
     let action = UIAction { [unowned self] _ in

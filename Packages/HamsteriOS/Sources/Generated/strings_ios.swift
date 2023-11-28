@@ -335,6 +335,48 @@ public enum L10n {
         public static let unableToAccess = L10n.tr("Localizable", "k_b.layout_action.import.unable_to_access", fallback: "导入文件读取受限，无法加载文件")
       }
     }
+    public enum LayoutZh26 {
+      /// 启用中英切换按键
+      public static let displayChineseEnglishSwitchButton = L10n.tr("Localizable", "k_b.layout_zh26.displayChineseEnglishSwitchButton", fallback: "启用中英切换按键")
+      /// 启用符号按键
+      public static let displayClassifySymbolButton = L10n.tr("Localizable", "k_b.layout_zh26.displayClassifySymbolButton", fallback: "启用符号按键")
+      /// 启用分号按键
+      public static let displaySemicolonButton = L10n.tr("Localizable", "k_b.layout_zh26.displaySemicolonButton", fallback: "启用分号按键")
+      /// 启用空格左侧按键
+      public static let displaySpaceLeftButton = L10n.tr("Localizable", "k_b.layout_zh26.displaySpaceLeftButton", fallback: "启用空格左侧按键")
+      /// 启用空格右侧按键
+      public static let displaySpaceRightButton = L10n.tr("Localizable", "k_b.layout_zh26.displaySpaceRightButton", fallback: "启用空格右侧按键")
+      /// 左侧按键键值
+      public static let keyValueOfSpaceLeftButton = L10n.tr("Localizable", "k_b.layout_zh26.keyValueOfSpaceLeftButton", fallback: "左侧按键键值")
+      /// 右侧按键键值
+      public static let keyValueOfSpaceRightButton = L10n.tr("Localizable", "k_b.layout_zh26.keyValueOfSpaceRightButton", fallback: "右侧按键键值")
+      /// 设置
+      public static let segmentPrefs = L10n.tr("Localizable", "k_b.layout_zh26.segment_prefs", fallback: "设置")
+      /// 划动设置
+      public static let segmentSwipe = L10n.tr("Localizable", "k_b.layout_zh26.segment_swipe", fallback: "划动设置")
+      /// 左侧按键由RIME处理
+      public static let spaceLeftButtonProcessByRIME = L10n.tr("Localizable", "k_b.layout_zh26.spaceLeftButtonProcessByRIME", fallback: "左侧按键由RIME处理")
+      /// 右侧按键由RIME处理
+      public static let spaceRightButtonProcessByRIME = L10n.tr("Localizable", "k_b.layout_zh26.spaceRightButtonProcessByRIME", fallback: "右侧按键由RIME处理")
+      /// 按键位于空格左侧
+      public static let switchOnLeftOfSpace = L10n.tr("Localizable", "k_b.layout_zh26.switch_on_left_of_space", fallback: "按键位于空格左侧")
+      /// “按键位于空格左侧”选项：关闭状态则位于空格右侧，开启状态则位于空格左侧
+      public static let switchOnLeftOfSpaceRemark = L10n.tr("Localizable", "k_b.layout_zh26.switch_on_left_of_space_remark", fallback: "“按键位于空格左侧”选项：关闭状态则位于空格右侧，开启状态则位于空格左侧")
+      public enum SwipeKey {
+        /// 新增滑动Action
+        public static let addKeySwipeAction = L10n.tr("Localizable", "k_b.layout_zh26.swipe_key.add_key_swipe_action", fallback: "新增滑动Action")
+        /// 删除
+        public static let delete = L10n.tr("Localizable", "k_b.layout_zh26.swipe_key.delete", fallback: "删除")
+        /// %@已经存在
+        public static func keyExist(_ p1: Any) -> String {
+          return L10n.tr("Localizable", "k_b.layout_zh26.swipe_key.key_exist", String(describing: p1), fallback: "%@已经存在")
+        }
+        /// 保存
+        public static let submit = L10n.tr("Localizable", "k_b.layout_zh26.swipe_key.submit", fallback: "保存")
+        /// 字符
+        public static let title = L10n.tr("Localizable", "k_b.layout_zh26.swipe_key.title", fallback: "字符")
+      }
+    }
     public enum TypeOption {
       /// 英文键盘
       public static let alphabetic = L10n.tr("Localizable", "k_b.type_option.alphabetic", fallback: "英文键盘")
