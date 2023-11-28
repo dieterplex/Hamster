@@ -162,3 +162,9 @@
 2. 請將個人方案上傳至“Rime”目錄内，可先刪除原“Rime”目錄内檔案再上傳;\
 3. 上傳完畢後，需要點擊\"重新部署\"，否則方案不會生效；\
 4. 瀏覽器内支援全選/拖曳等動作。";
+
+"color_scheme.enable_custom_keyboard_color" = "啟用配色";
+"color_scheme.system_dark_mode" = "系統淺色模式";
+"color_scheme.system_light_mode" = "系統深色模式";
+"color_scheme.scheme_name" = "方案名稱： %@";
+"color_scheme.author_name" = "作者： %@";

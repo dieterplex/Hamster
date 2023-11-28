@@ -16,14 +16,14 @@ class KeyboardColorView: NibLessView {
 
   private let schemaNameView: UILabel = {
     let label = UILabel(frame: .zero)
-    label.text = "方案名称："
+    label.text = L10n.ColorScheme.schemeName("")
     label.font = UIFont.preferredFont(forTextStyle: .headline)
     return label
   }()
 
   private let schemaAuthorView: UILabel = {
     let label = UILabel(frame: .zero)
-    label.text = "作者："
+    label.text = L10n.ColorScheme.authorName("")
     label.font = .preferredFont(forTextStyle: .subheadline)
     return label
   }()
@@ -164,8 +164,8 @@ class KeyboardColorView: NibLessView {
   }
 
   func updatePreviewColor() {
-    schemaNameView.text = "方案名称: \(keyboardColor.name)"
-    schemaAuthorView.text = "作者: \(keyboardColor.author)"
+    schemaNameView.text = L10n.ColorScheme.schemeName(keyboardColor.name)
+    schemaAuthorView.text = L10n.ColorScheme.authorName(keyboardColor.author)
 
     wordLabel.textColor = keyboardColor.textColor
     wordPinyinLabel.textColor = keyboardColor.textColor
@@ -182,8 +182,8 @@ class KeyboardColorView: NibLessView {
   }
 
   func cleanPreviewColor() {
-    schemaNameView.text = "方案名称: "
-    schemaAuthorView.text = "作者: "
+    schemaNameView.text = L10n.ColorScheme.schemeName("")
+    schemaAuthorView.text = L10n.ColorScheme.authorName("")
 
     wordLabel.textColor = .clear
     wordPinyinLabel.textColor = .clear
