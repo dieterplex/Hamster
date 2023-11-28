@@ -221,6 +221,21 @@ public enum L10n {
       /// 导入成功
       public static let success = L10n.tr("Localizable", "input_schema.import.success", fallback: "导入成功")
     }
+    public enum Upload {
+      /// 无法获取 IP 地址，请在系统设置 - WiFi 中查看地址。
+      public static let invalidIpHint = L10n.tr("Localizable", "input_schema.upload.invalid_ip_hint", fallback: "无法获取 IP 地址，请在系统设置 - WiFi 中查看地址。")
+      /// 局域网访问地址(点击复制)
+      public static let lanAccessAddress = L10n.tr("Localizable", "input_schema.upload.lan_access_address", fallback: "局域网访问地址(点击复制)")
+      /// 1. 请保持手机与浏览器处于同一局域网；
+      /// 2. 请将个人方案上传至“Rime”文件夹内，可先删除原“Rime”文件夹内文件再上传;
+      /// 3. 上传完毕后，需要点击"重新部署"，否则方案不会生效；
+      /// 4. 浏览器内支持全选/拖拽等动作。
+      public static let remark = L10n.tr("Localizable", "input_schema.upload.remark", fallback: "1. 请保持手机与浏览器处于同一局域网；\n2. 请将个人方案上传至“Rime”文件夹内，可先删除原“Rime”文件夹内文件再上传;\n3. 上传完毕后，需要点击\"重新部署\"，否则方案不会生效；\n4. 浏览器内支持全选/拖拽等动作。")
+      /// 启动服务
+      public static let startService = L10n.tr("Localizable", "input_schema.upload.start_service", fallback: "启动服务")
+      /// 停止服务
+      public static let stopService = L10n.tr("Localizable", "input_schema.upload.stop_service", fallback: "停止服务")
+    }
   }
   public enum Main {
     /// 禁用

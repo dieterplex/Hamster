@@ -153,3 +153,12 @@
 "input_schema.solution_deploying" = "方案部署中……";
 "input_schema.import.success" = "导入成功";
 "input_schema.import.failed" = "导入Zip文件失败, %@";
+
+"input_schema.upload.stop_service" = "停止服务";
+"input_schema.upload.start_service" = "启动服务";
+"input_schema.upload.invalid_ip_hint" = "无法获取 IP 地址，请在系统设置 - WiFi 中查看地址。";
+"input_schema.upload.lan_access_address" = "局域网访问地址(点击复制)";
+"input_schema.upload.remark" = "1. 请保持手机与浏览器处于同一局域网；\
+2. 请将个人方案上传至“Rime”文件夹内，可先删除原“Rime”文件夹内文件再上传;\
+3. 上传完毕后，需要点击\"重新部署\"，否则方案不会生效；\
+4. 浏览器内支持全选/拖拽等动作。";

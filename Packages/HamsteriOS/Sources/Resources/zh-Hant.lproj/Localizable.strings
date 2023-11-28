@@ -153,3 +153,12 @@
 "input_schema.solution_deploying" = "方案部署中……";
 "input_schema.import.success" = "導入成功";
 "input_schema.import.failed" = "導入Zip檔案失敗, %@";
+
+"input_schema.upload.stop_service" = "停止服務";
+"input_schema.upload.start_service" = "啟動服務";
+"input_schema.upload.invalid_ip_hint" = "無法獲取 IP 地址，請在系統設置 - WiFi 中查看地址。";
+"input_schema.upload.lan_access_address" = "區域網路存取地址(點擊複製)";
+"input_schema.upload.remark" = "1. 請保持手機與瀏覽器處於相同區域網路；\
+2. 請將個人方案上傳至“Rime”目錄内，可先刪除原“Rime”目錄内檔案再上傳;\
+3. 上傳完畢後，需要點擊\"重新部署\"，否則方案不會生效；\
+4. 瀏覽器内支援全選/拖曳等動作。";
