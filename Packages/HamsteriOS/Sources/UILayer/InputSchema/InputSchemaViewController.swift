@@ -57,7 +57,7 @@ class InputSchemaViewController: NibLessViewController {
 
 extension InputSchemaViewController {
   override func loadView() {
-    title = "输入方案设置"
+    title = L10n.Main.Solution.settings
     view = InputSchemaRootView(inputSchemaViewModel: inputSchemaViewModel)
   }
 

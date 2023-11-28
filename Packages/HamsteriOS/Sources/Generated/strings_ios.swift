@@ -206,6 +206,22 @@ public enum L10n {
       public static let success = L10n.tr("Localizable", "i_cloud.upload.success", fallback: "拷贝成功")
     }
   }
+  public enum InputSchema {
+    /// 需要保留至少一个输入方案。
+    public static let selectAtLeastOne = L10n.tr("Localizable", "input_schema.select_at_least_one", fallback: "需要保留至少一个输入方案。")
+    /// 方案部署中……
+    public static let solutionDeploying = L10n.tr("Localizable", "input_schema.solution_deploying", fallback: "方案部署中……")
+    public enum Import {
+      /// 导入Zip文件失败, %@
+      public static func failed(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "input_schema.import.failed", String(describing: p1), fallback: "导入Zip文件失败, %@")
+      }
+      /// 方案导入中……
+      public static let importing = L10n.tr("Localizable", "input_schema.import.importing", fallback: "方案导入中……")
+      /// 导入成功
+      public static let success = L10n.tr("Localizable", "input_schema.import.success", fallback: "导入成功")
+    }
+  }
   public enum Main {
     /// 禁用
     public static let disabled = L10n.tr("Localizable", "main.disabled", fallback: "禁用")

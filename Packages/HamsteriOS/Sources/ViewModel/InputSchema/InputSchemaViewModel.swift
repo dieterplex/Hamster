@@ -55,7 +55,7 @@ extension InputSchemaViewModel {
       rimeContext.appendSelectSchema(schema)
     } else {
       if selectSchemas.count == 1 {
-        throw "需要保留至少一个输入方案。"
+        throw L10n.InputSchema.selectAtLeastOne
       }
       rimeContext.removeSelectSchema(schema)
     }
@@ -66,7 +66,7 @@ extension InputSchemaViewModel {
   public func importZipFile(fileURL: URL) async {
     Logger.statistics.debug("file.fileName: \(fileURL.path)")
 
-    await ProgressHUD.animate("方案导入中……", AnimationType.circleRotateChase, interaction: false)
+    await ProgressHUD.animate(L10n.InputSchema.Import.importing, AnimationType.circleRotateChase, interaction: false)
     do {
       // 检测 Rime 目录是否存在
       try FileManager.createDirectory(override: false, dst: FileManager.sandboxUserDataDirectory)
@@ -74,17 +74,17 @@ extension InputSchemaViewModel {
 
       var hamsterConfiguration = HamsterAppDependencyContainer.shared.configuration
 
-      await ProgressHUD.animate("方案部署中……", interaction: false)
+      await ProgressHUD.animate(L10n.InputSchema.solutionDeploying, interaction: false)
       try rimeContext.deployment(configuration: &hamsterConfiguration)
 
       HamsterAppDependencyContainer.shared.configuration = hamsterConfiguration
 
       // 发布
       reloadTableStateSubject.send(true)
-      await ProgressHUD.success("导入成功", interaction: false, delay: 1.5)
+      await ProgressHUD.success(L10n.InputSchema.Import.success, interaction: false, delay: 1.5)
     } catch {
       Logger.statistics.debug("zip \(error)")
-      await ProgressHUD.failed("导入Zip文件失败, \(error.localizedDescription)")
+      await ProgressHUD.failed(L10n.InputSchema.Import.failed (error.localizedDescription))
     }
   }
 }

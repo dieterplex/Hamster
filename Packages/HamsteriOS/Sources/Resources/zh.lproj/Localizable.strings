@@ -147,3 +147,9 @@
 "i_cloud.upload.copying" = "拷贝中……";
 "i_cloud.upload.success" = "拷贝成功";
 "i_cloud.upload.failed" = "拷贝失败:%@";
+
+"input_schema.select_at_least_one" = "需要保留至少一个输入方案。";
+"input_schema.import.importing" = "方案导入中……";
+"input_schema.solution_deploying" = "方案部署中……";
+"input_schema.import.success" = "导入成功";
+"input_schema.import.failed" = "导入Zip文件失败, %@";
