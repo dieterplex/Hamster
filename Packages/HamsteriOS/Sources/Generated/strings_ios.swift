@@ -120,6 +120,10 @@ public enum L10n {
     public static let confirm = L10n.tr("Localizable", "common.confirm", fallback: "确认")
     /// 复制成功
     public static let copySuccessfully = L10n.tr("Localizable", "common.copy_successfully", fallback: "复制成功")
+    /// 禁用
+    public static let disabled = L10n.tr("Localizable", "common.disabled", fallback: "禁用")
+    /// 启用
+    public static let enabled = L10n.tr("Localizable", "common.enabled", fallback: "启用")
   }
   public enum Feedback {
     /// 按键震动
@@ -253,11 +257,102 @@ public enum L10n {
       public static let stopService = L10n.tr("Localizable", "input_schema.upload.stop_service", fallback: "停止服务")
     }
   }
+  public enum KB {
+    /// 关闭后，Shift状态随当前输入状态变化。注意: 双击Shift会保持锁定
+    public static let autoLowerRemark = L10n.tr("Localizable", "k_b.auto_lower_remark", fallback: "关闭后，Shift状态随当前输入状态变化。注意: 双击Shift会保持锁定")
+    /// 关闭划动显示文本
+    public static let disableSwipe = L10n.tr("Localizable", "k_b.disable_swipe", fallback: "关闭划动显示文本")
+    /// 关闭后，按键上不在显示划动文本。
+    public static let disableSwipeRemark = L10n.tr("Localizable", "k_b.disable_swipe_remark", fallback: "关闭后，按键上不在显示划动文本。")
+    /// 显示按键气泡
+    public static let displayButtonBubbles = L10n.tr("Localizable", "k_b.displayButtonBubbles", fallback: "显示按键气泡")
+    /// 启用内嵌模式
+    public static let enableEmbeddedInputMode = L10n.tr("Localizable", "k_b.enableEmbeddedInputMode", fallback: "启用内嵌模式")
+    /// 键盘布局
+    public static let layout = L10n.tr("Localizable", "k_b.layout", fallback: "键盘布局")
+    /// 注意：
+    /// 1. 内置键盘向左滑动进入设置页面。
+    /// 2. 自定义布局通过配置文件调整，调整后需重新部署。
+    public static let layoutRemark = L10n.tr("Localizable", "k_b.layout_remark", fallback: "注意：\n1. 内置键盘向左滑动进入设置页面。\n2. 自定义布局通过配置文件调整，调整后需重新部署。")
+    /// Shift状态锁定
+    public static let lockShiftState = L10n.tr("Localizable", "k_b.lockShiftState", fallback: "Shift状态锁定")
+    /// 数字九宫格
+    public static let numberNineGrid = L10n.tr("Localizable", "k_b.number_nine_grid", fallback: "数字九宫格")
+    /// 按键上下方显示划动
+    public static let showSwipeLabelUpAndDownBoth = L10n.tr("Localizable", "k_b.show_swipe_label_up_and_down_both", fallback: "按键上下方显示划动")
+    /// 默认关闭状态下，在按键上方显示上下划动符号（如果存在），开启状态下，按键上方显示上划，下方显示下划。
+    public static let showSwipeUpAndDownLayoutRemark = L10n.tr("Localizable", "k_b.show_swipe_up_and_down_layout_remark", fallback: "默认关闭状态下，在按键上方显示上下划动符号（如果存在），开启状态下，按键上方显示上划，下方显示下划。")
+    /// 空格设置
+    public static let spaceSettings = L10n.tr("Localizable", "k_b.space_settings", fallback: "空格设置")
+    /// 分类符号键盘
+    public static let symbolKeyboard = L10n.tr("Localizable", "k_b.symbol_keyboard", fallback: "分类符号键盘")
+    /// 符号设置
+    public static let symbolPrefs = L10n.tr("Localizable", "k_b.symbol_prefs", fallback: "符号设置")
+    /// 候选栏设置
+    public static let toolbarPrefs = L10n.tr("Localizable", "k_b.toolbar_prefs", fallback: "候选栏设置")
+    /// 开启后建议调整工具栏高度为：40。
+    /// （位置：键盘设置 -> 候选栏设置 -> 工具栏高度）
+    public static let toolbarRemark = L10n.tr("Localizable", "k_b.toolbar_remark", fallback: "开启后建议调整工具栏高度为：40。\n（位置：键盘设置 -> 候选栏设置 -> 工具栏高度）")
+    /// 左侧显示上划
+    public static let upSwipeOnLeft = L10n.tr("Localizable", "k_b.up_swipe_on_left", fallback: "左侧显示上划")
+    /// 关闭后，上下滑动全部显示时，右侧为显示上划，左侧显示下划。
+    public static let upSwipeOnLeftRemark = L10n.tr("Localizable", "k_b.up_swipe_on_left_remark", fallback: "关闭后，上下滑动全部显示时，右侧为显示上划，左侧显示下划。")
+    /// 上下显示不规则布局
+    public static let useSwipeLabelUpAndDownIrregularLayout = L10n.tr("Localizable", "k_b.use_swipe_label_up_and_down_irregular_layout", fallback: "上下显示不规则布局")
+    public enum Layout {
+      /// 中文26键
+      public static let chinese = L10n.tr("Localizable", "k_b.layout.chinese", fallback: "中文26键")
+      /// 中文9键
+      public static let chineseNineGrid = L10n.tr("Localizable", "k_b.layout.chineseNineGrid", fallback: "中文9键")
+      /// 自定义键盘
+      public static let custom = L10n.tr("Localizable", "k_b.layout.custom", fallback: "自定义键盘")
+      /// 自定义-%@
+      public static func customNamed(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "k_b.layout.custom_named", String(describing: p1), fallback: "自定义-%@")
+      }
+      /// 数字九宫格
+      public static let numericNineGrid = L10n.tr("Localizable", "k_b.layout.numericNineGrid", fallback: "数字九宫格")
+    }
+    public enum LayoutAction {
+      /// 删除
+      public static let delete = L10n.tr("Localizable", "k_b.layout_action.delete", fallback: "删除")
+      /// 设置
+      public static let settings = L10n.tr("Localizable", "k_b.layout_action.settings", fallback: "设置")
+      public enum Delete {
+        /// 未找到此键盘
+        public static let failed = L10n.tr("Localizable", "k_b.layout_action.delete.failed", fallback: "未找到此键盘")
+        /// 删除成功
+        public static let success = L10n.tr("Localizable", "k_b.layout_action.delete.success", fallback: "删除成功")
+      }
+      public enum Import {
+        /// 自定义键盘配置文件加载失败
+        public static let failed = L10n.tr("Localizable", "k_b.layout_action.import.failed", fallback: "自定义键盘配置文件加载失败")
+        /// 导入中……
+        public static let importing = L10n.tr("Localizable", "k_b.layout_action.import.importing", fallback: "导入中……")
+        /// 导入成功
+        public static let success = L10n.tr("Localizable", "k_b.layout_action.import.success", fallback: "导入成功")
+        /// 导入文件读取受限，无法加载文件
+        public static let unableToAccess = L10n.tr("Localizable", "k_b.layout_action.import.unable_to_access", fallback: "导入文件读取受限，无法加载文件")
+      }
+    }
+    public enum TypeOption {
+      /// 英文键盘
+      public static let alphabetic = L10n.tr("Localizable", "k_b.type_option.alphabetic", fallback: "英文键盘")
+      /// 中文26键键盘
+      public static let chinese = L10n.tr("Localizable", "k_b.type_option.chinese", fallback: "中文26键键盘")
+      /// 中文九宫格键盘
+      public static let chineseNineGrid = L10n.tr("Localizable", "k_b.type_option.chineseNineGrid", fallback: "中文九宫格键盘")
+      /// 分类符号键盘
+      public static let classifySymbolic = L10n.tr("Localizable", "k_b.type_option.classifySymbolic", fallback: "分类符号键盘")
+      /// 自定义键盘
+      public static let custom = L10n.tr("Localizable", "k_b.type_option.custom", fallback: "自定义键盘")
+      /// Emojis键盘
+      public static let emojis = L10n.tr("Localizable", "k_b.type_option.emojis", fallback: "Emojis键盘")
+      /// 数字九宫格键盘
+      public static let numericNineGrid = L10n.tr("Localizable", "k_b.type_option.numericNineGrid", fallback: "数字九宫格键盘")
+    }
+  }
   public enum Main {
-    /// 禁用
-    public static let disabled = L10n.tr("Localizable", "main.disabled", fallback: "禁用")
-    /// 启用
-    public static let enabled = L10n.tr("Localizable", "main.enabled", fallback: "启用")
     /// 仓输入法
     public static let name = L10n.tr("Localizable", "main.name", fallback: "仓输入法")
     /// 输入法设置

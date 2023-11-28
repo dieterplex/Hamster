@@ -143,7 +143,7 @@ public class SettingsViewModel: ObservableObject {
           icon: UIImage(systemName: "paintpalette")!,
           text: L10n.Main.Keyboard.scheme,
           accessoryType: .disclosureIndicator,
-          navigationLinkLabel: { [unowned self] in enableColorSchema ? L10n.Main.enabled : L10n.Main.disabled },
+          navigationLinkLabel: { [unowned self] in enableColorSchema ? L10n.Common.enabled : L10n.Common.disabled },
           navigationAction: { [unowned self] in
             self.mainViewModel.subViewSubject.send(.colorSchema)
           }
@@ -162,7 +162,7 @@ public class SettingsViewModel: ObservableObject {
           icon: UIImage(systemName: "externaldrive.badge.icloud")!,
           text: L10n.Main.Syncbackup.icloud,
           accessoryType: .disclosureIndicator,
-          navigationLinkLabel: { [unowned self] in enableAppleCloud ? L10n.Main.enabled : L10n.Main.disabled },
+          navigationLinkLabel: { [unowned self] in enableAppleCloud ? L10n.Common.enabled : L10n.Common.disabled },
           navigationAction: { [unowned self] in
             self.mainViewModel.subViewSubject.send(.iCloud)
           }
