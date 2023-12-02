@@ -427,6 +427,20 @@ public enum L10n {
         public static let title = L10n.tr("Localizable", "k_b.layout_zh9grid.symbol_edit.title", fallback: "左侧划动符号栏")
       }
     }
+    public enum Num9grid {
+      /// 符号是否直接上屏
+      public static let enterDirectlyOnScreen = L10n.tr("Localizable", "k_b.num9grid.enterDirectlyOnScreen", fallback: "符号是否直接上屏")
+      /// 获取系统默认配置失败
+      public static let failToGetSystemDefaultConf = L10n.tr("Localizable", "k_b.num9grid.fail_to_get_system_default_conf", fallback: "获取系统默认配置失败")
+      /// 设置
+      public static let segmentSettings = L10n.tr("Localizable", "k_b.num9grid.segment_settings", fallback: "设置")
+      /// 符号列表
+      public static let segmentSymbolList = L10n.tr("Localizable", "k_b.num9grid.segment_symbol_list", fallback: "符号列表")
+      /// 自定义数字九宫格左侧划动符号栏
+      public static let symbolListHeader = L10n.tr("Localizable", "k_b.num9grid.symbol_list_header", fallback: "自定义数字九宫格左侧划动符号栏")
+      /// 符号列表 - 恢复默认值
+      public static let symbolListReset = L10n.tr("Localizable", "k_b.num9grid.symbol_list_reset", fallback: "符号列表 - 恢复默认值")
+    }
     public enum SwipeSetting {
       /// 新增滑动
       public static let addSwipe = L10n.tr("Localizable", "k_b.swipe_setting.add_swipe", fallback: "新增滑动")

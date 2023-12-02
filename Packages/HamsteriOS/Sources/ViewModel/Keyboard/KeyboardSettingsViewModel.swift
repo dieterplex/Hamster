@@ -948,25 +948,25 @@ public class KeyboardSettingsViewModel: ObservableObject, Hashable, Identifiable
 //        enableNineGridOfNumericKeyboard = $0
 //      }),
     .init(
-      text: "符号是否直接上屏",
+      text: L10n.KB.Num9grid.enterDirectlyOnScreen,
       type: .toggle,
       toggleValue: { [unowned self] in enterDirectlyOnScreenByNineGridOfNumericKeyboard },
       toggleHandled: { [unowned self] in
         enterDirectlyOnScreenByNineGridOfNumericKeyboard = $0
       }),
     .init(
-      text: "符号列表 - 恢复默认值",
+      text: L10n.KB.Num9grid.symbolListReset,
       textTintColor: .systemRed,
       type: .button,
       buttonAction: { [unowned self] in
         Task {
           guard let defaultConfiguration = HamsterAppDependencyContainer.shared.defaultConfiguration else {
-            throw "获取系统默认配置失败"
+            throw L10n.KB.Num9grid.failToGetSystemDefaultConf
           }
           if let defaultSymbolsOfGridOfNumericKeyboard = defaultConfiguration.keyboard?.symbolsOfGridOfNumericKeyboard {
             self.symbolsOfGridOfNumericKeyboard = defaultSymbolsOfGridOfNumericKeyboard
             resetSignSubject.send(true)
-            await ProgressHUD.success("重置成功")
+            await ProgressHUD.success(L10n.Common.Reset.success)
           }
         }
       })
