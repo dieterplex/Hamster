@@ -15,8 +15,6 @@ public enum L10n {
     public static let email = L10n.tr("Localizable", "about.email", fallback: "联系邮箱")
     /// 许可证
     public static let license = L10n.tr("Localizable", "about.license", fallback: "许可证")
-    /// 重置成功
-    public static let resetSuccessfully = L10n.tr("Localizable", "about.reset_successfully", fallback: "重置成功")
     /// RIME版本
     public static let rimeVersion = L10n.tr("Localizable", "about.rime_version", fallback: "RIME版本")
     /// 开源地址
@@ -116,14 +114,24 @@ public enum L10n {
   public enum Common {
     /// 取消
     public static let cancel = L10n.tr("Localizable", "common.cancel", fallback: "取消")
+    /// 完成
+    public static let complete = L10n.tr("Localizable", "common.complete", fallback: "完成")
     /// 确认
     public static let confirm = L10n.tr("Localizable", "common.confirm", fallback: "确认")
     /// 复制成功
     public static let copySuccessfully = L10n.tr("Localizable", "common.copy_successfully", fallback: "复制成功")
     /// 禁用
     public static let disabled = L10n.tr("Localizable", "common.disabled", fallback: "禁用")
+    /// 编辑
+    public static let edit = L10n.tr("Localizable", "common.edit", fallback: "编辑")
     /// 启用
     public static let enabled = L10n.tr("Localizable", "common.enabled", fallback: "启用")
+    public enum Reset {
+      /// 重置失败
+      public static let failed = L10n.tr("Localizable", "common.reset.failed", fallback: "重置失败")
+      /// 重置成功
+      public static let success = L10n.tr("Localizable", "common.reset.success", fallback: "重置成功")
+    }
   }
   public enum Feedback {
     /// 按键震动
@@ -322,6 +330,12 @@ public enum L10n {
       }
       /// 数字九宫格
       public static let numericNineGrid = L10n.tr("Localizable", "k_b.layout.numericNineGrid", fallback: "数字九宫格")
+      public enum Symbol {
+        /// 未找到默认值
+        public static let noDefaultConf = L10n.tr("Localizable", "k_b.layout.symbol.no_default_conf", fallback: "未找到默认值")
+        /// 未找到系统默认配置
+        public static let noSysDefaultConf = L10n.tr("Localizable", "k_b.layout.symbol.no_sys_default_conf", fallback: "未找到系统默认配置")
+      }
     }
     public enum LayoutAction {
       /// 删除
@@ -436,6 +450,18 @@ public enum L10n {
       public static let textDisplayed = L10n.tr("Localizable", "k_b.swipe_setting.text_displayed", fallback: "键盘显示文本")
       /// 显示文本
       public static let textPlaceholder = L10n.tr("Localizable", "k_b.swipe_setting.text_placeholder", fallback: "显示文本")
+    }
+    public enum SymbolEdit {
+      /// 我在这
+      public static let here = L10n.tr("Localizable", "k_b.symbol_edit.here", fallback: "我在这")
+      /// 点我添加新符号(回车键保存)。
+      public static let tap2add = L10n.tr("Localizable", "k_b.symbol_edit.tap2add", fallback: "点我添加新符号(回车键保存)。")
+      /// 点击行可编辑/划动可删除
+      public static let tap2editOrSwipe2delete = L10n.tr("Localizable", "k_b.symbol_edit.tap2edit_or_swipe2delete", fallback: "点击行可编辑/划动可删除")
+      public enum Reset {
+        /// 恢复默认值
+        public static let title = L10n.tr("Localizable", "k_b.symbol_edit.reset.title", fallback: "恢复默认值")
+      }
     }
     public enum Toolbar {
       /// 候选备注字体大小
@@ -574,12 +600,8 @@ public enum L10n {
       public static let alertMessage = L10n.tr("Localizable", "rime.reset.alert_message", fallback: "重置会恢复到初始安装状态，是否确认重置？")
       /// RIME 重置
       public static let alertTitle = L10n.tr("Localizable", "rime.reset.alert_title", fallback: "RIME 重置")
-      /// 重置失败
-      public static let failed = L10n.tr("Localizable", "rime.reset.failed", fallback: "重置失败")
       /// RIME重置中, 请稍候……
       public static let reseting = L10n.tr("Localizable", "rime.reset.reseting", fallback: "RIME重置中, 请稍候……")
-      /// 重置成功
-      public static let success = L10n.tr("Localizable", "rime.reset.success", fallback: "重置成功")
       /// RIME重置
       public static let text = L10n.tr("Localizable", "rime.reset.text", fallback: "RIME重置")
     }

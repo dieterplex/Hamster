@@ -51,7 +51,7 @@ class AboutViewController: NibLessViewController, UIDocumentPickerDelegate {
       .sink { [unowned self] callback in
         self.alertConfirm(alertTitle: L10n.About.Reset.title, message: L10n.About.Reset.message, confirmTitle: L10n.About.Reset.confirm, confirmCallback: {
           callback()
-          ProgressHUD.success(L10n.About.resetSuccessfully, interaction: false, delay: 1.5)
+          ProgressHUD.success(L10n.Common.Reset.success, interaction: false, delay: 1.5)
         })
       }
       .store(in: &subscriptions)

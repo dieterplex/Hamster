@@ -299,10 +299,10 @@ public extension RimeViewModel {
       /// 在另存一份用于应用配置还原
       try HamsterConfigurationRepositories.shared.saveToUserDefaultsOnDefault(hamsterConfiguration)
 
-      await ProgressHUD.success(L10n.Rime.Reset.success, interaction: false, delay: 1.5)
+      await ProgressHUD.success(L10n.Common.Reset.success, interaction: false, delay: 1.5)
     } catch {
       Logger.statistics.error("rimeRest() error: \(error)")
-      await ProgressHUD.failed(L10n.Rime.Reset.failed, interaction: false, delay: 3)
+      await ProgressHUD.failed(L10n.Common.Reset.failed, interaction: false, delay: 3)
     }
   }
 }

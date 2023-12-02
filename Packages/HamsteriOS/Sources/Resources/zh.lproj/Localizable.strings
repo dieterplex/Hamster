@@ -44,13 +44,15 @@
 "about.export.text" = "导出界面设置";
 "about.export.error" = "导出 UI 设置失败";
 
-"about.reset_successfully" = "重置成功";
-
 "common.cancel" = "取消";
+"common.complete" = "完成";
 "common.confirm" = "确认";
 "common.copy_successfully" = "复制成功";
 "common.disabled" = "禁用";
+"common.edit" = "编辑";
 "common.enabled" = "启用";
+"common.reset.failed" = "重置失败";
+"common.reset.success" = "重置成功";
 
 "rime.simp_trad_swtich.title" = "简繁切换";
 "rime.simp_trad_swtich.footer" = "配置文件中`switches`简繁转换选项的配置名称，仓用于中文简体与繁体之间快速切换。";
@@ -79,8 +81,6 @@
 "rime.sync.failed" = "同步失败:%@";
 "rime.reset.text" = "RIME重置";
 "rime.reset.reseting" = "RIME重置中, 请稍候……";
-"rime.reset.success" = "重置成功";
-"rime.reset.failed" = "重置失败";
 "rime.reset.alert_title" = "RIME 重置";
 "rime.reset.alert_message" = "重置会恢复到初始安装状态，是否确认重置？";
 "rime.reset.alert_confirm" = "重置";
@@ -267,6 +267,14 @@
 "k_b.action_option.symbol" = "符号字符（不由 RIME 处理）";
 "k_b.action_option.shortCommand" = "快捷指令";
 "k_b.action_option.keyboardType" = "切换键盘";
+
+"k_b.symbol_edit.reset.title" = "恢复默认值";
+"k_b.symbol_edit.here" = "我在这";
+"k_b.symbol_edit.tap2edit_or_swipe2delete" = "点击行可编辑/划动可删除";
+"k_b.symbol_edit.tap2add" = "点我添加新符号(回车键保存)。";
+
+"k_b.layout.symbol.no_default_conf" = "未找到默认值";
+"k_b.layout.symbol.no_sys_default_conf" = "未找到系统默认配置";
 
 "k_b.toolbar.title" = "候选栏";
 "k_b.toolbar.enableToolbar" = "启用候选工具栏";
