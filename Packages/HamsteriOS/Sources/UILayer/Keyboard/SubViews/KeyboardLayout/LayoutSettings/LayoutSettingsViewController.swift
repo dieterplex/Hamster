@@ -96,7 +96,7 @@ class LayoutSettingsViewController: NibLessViewController {
           return
         }
         let rightBarButtonItem = UIBarButtonItem(
-          title: isEditing ? "完成" : "编辑",
+          title: isEditing ? L10n.Common.complete : L10n.Common.edit,
           style: .plain,
           target: keyboardSettingsViewModel,
           action: #selector(keyboardSettingsViewModel.changeSymbolsOfChineseNineGridEditorState)

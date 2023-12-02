@@ -276,6 +276,8 @@
 "k_b.layout.symbol.no_default_conf" = "未找到默认值";
 "k_b.layout.symbol.no_sys_default_conf" = "未找到系统默认配置";
 
+"k_b.layout_zh9grid.symbol_edit.title" = "左侧划动符号栏";
+
 "k_b.layout.symbol.setting.title" = "符号设置";
 "k_b.layout.symbol.setting.segment_pairs" = "成对上屏";
 "k_b.layout.symbol.setting.segment_cursor_back" = "光标居中";
