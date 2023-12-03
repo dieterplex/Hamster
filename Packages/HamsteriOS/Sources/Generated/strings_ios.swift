@@ -335,6 +335,16 @@ public enum L10n {
         public static let noDefaultConf = L10n.tr("Localizable", "k_b.layout.symbol.no_default_conf", fallback: "未找到默认值")
         /// 未找到系统默认配置
         public static let noSysDefaultConf = L10n.tr("Localizable", "k_b.layout.symbol.no_sys_default_conf", fallback: "未找到系统默认配置")
+        public enum Setting {
+          /// 光标居中
+          public static let segmentCursorBack = L10n.tr("Localizable", "k_b.layout.symbol.setting.segment_cursor_back", fallback: "光标居中")
+          /// 成对上屏
+          public static let segmentPairs = L10n.tr("Localizable", "k_b.layout.symbol.setting.segment_pairs", fallback: "成对上屏")
+          /// 返回主键盘
+          public static let segmentReturnToMainKeyboard = L10n.tr("Localizable", "k_b.layout.symbol.setting.segment_return_to_main_keyboard", fallback: "返回主键盘")
+          /// 符号设置
+          public static let title = L10n.tr("Localizable", "k_b.layout.symbol.setting.title", fallback: "符号设置")
+        }
       }
     }
     public enum LayoutAction {
@@ -357,6 +367,16 @@ public enum L10n {
         public static let success = L10n.tr("Localizable", "k_b.layout_action.import.success", fallback: "导入成功")
         /// 导入文件读取受限，无法加载文件
         public static let unableToAccess = L10n.tr("Localizable", "k_b.layout_action.import.unable_to_access", fallback: "导入文件读取受限，无法加载文件")
+      }
+    }
+    public enum LayoutSymbol {
+      public enum CommonSymbol {
+        /// 常用符号 - 恢复默认值
+        public static let reset = L10n.tr("Localizable", "k_b.layout_symbol.common_symbol.reset", fallback: "常用符号 - 恢复默认值")
+      }
+      public enum Setting {
+        /// 符号键盘设置
+        public static let title = L10n.tr("Localizable", "k_b.layout_symbol.setting.title", fallback: "符号键盘设置")
       }
     }
     public enum LayoutZh26 {

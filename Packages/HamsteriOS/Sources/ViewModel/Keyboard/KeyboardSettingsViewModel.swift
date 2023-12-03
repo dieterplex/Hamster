@@ -981,12 +981,12 @@ public class KeyboardSettingsViewModel: ObservableObject, Hashable, Identifiable
 //        enableSymbolKeyboard = $0
 //      }),
     .init(
-      text: "常用符号 - 恢复默认值",
+      text: L10n.KB.LayoutSymbol.CommonSymbol.reset,
       textTintColor: .systemRed,
       type: .button,
       buttonAction: { [unowned self] in
         MostRecentSymbolProvider().reset()
-        await ProgressHUD.success("重置成功", interaction: false, delay: 1.5)
+        await ProgressHUD.success(L10n.Common.Reset.success, interaction: false, delay: 1.5)
       })
   ]
 

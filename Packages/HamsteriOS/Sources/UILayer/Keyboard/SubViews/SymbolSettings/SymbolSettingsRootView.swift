@@ -16,7 +16,7 @@ class SymbolSettingsRootView: NibLessView {
   private let keyboardSettingsViewModel: KeyboardSettingsViewModel
 
   lazy var segmentedView: UISegmentedControl = {
-    let segmentedControl = UISegmentedControl(items: ["成对上屏", "光标居中", "返回主键盘"])
+    let segmentedControl = UISegmentedControl(items: [L10n.KB.Layout.Symbol.Setting.segmentPairs, L10n.KB.Layout.Symbol.Setting.segmentCursorBack, L10n.KB.Layout.Symbol.Setting.segmentReturnToMainKeyboard])
     segmentedControl.selectedSegmentIndex = 0
     segmentedControl.addTarget(
       keyboardSettingsViewModel,
@@ -47,10 +47,10 @@ class SymbolSettingsRootView: NibLessView {
     needRestButton: true,
     restButtonAction: { [unowned self] in
       guard let defaultConfiguration = HamsterAppDependencyContainer.shared.defaultConfiguration else {
-        throw "未找到系统默认配置"
+        throw L10n.KB.Layout.Symbol.noSysDefaultConf
       }
       guard let defaultOfSymbols = defaultConfiguration.keyboard?.pairsOfSymbols else {
-        throw "未找到默认值"
+        throw L10n.KB.Layout.Symbol.noDefaultConf
       }
       keyboardSettingsViewModel.pairsOfSymbols = defaultOfSymbols
       keyboardSettingsViewModel.resetSignSubject.send(true)
@@ -67,10 +67,10 @@ class SymbolSettingsRootView: NibLessView {
     needRestButton: true,
     restButtonAction: { [unowned self] in
       guard let defaultConfiguration = HamsterAppDependencyContainer.shared.defaultConfiguration else {
-        throw "未找到系统默认配置"
+        throw L10n.KB.Layout.Symbol.noSysDefaultConf
       }
       guard let defaultOfSymbols = defaultConfiguration.keyboard?.symbolsOfCursorBack else {
-        throw "未找到默认值"
+        throw L10n.KB.Layout.Symbol.noDefaultConf
       }
       keyboardSettingsViewModel.symbolsOfCursorBack = defaultOfSymbols
       keyboardSettingsViewModel.resetSignSubject.send(true)
@@ -87,10 +87,10 @@ class SymbolSettingsRootView: NibLessView {
     needRestButton: true,
     restButtonAction: { [unowned self] in
       guard let defaultConfiguration = HamsterAppDependencyContainer.shared.defaultConfiguration else {
-        throw "未找到系统默认配置"
+        throw L10n.KB.Layout.Symbol.noSysDefaultConf
       }
       guard let defaultOfSymbols = defaultConfiguration.keyboard?.symbolsOfReturnToMainKeyboard else {
-        throw "未找到默认值"
+        throw L10n.KB.Layout.Symbol.noDefaultConf
       }
       keyboardSettingsViewModel.symbolsOfReturnToMainKeyboard = defaultOfSymbols
       keyboardSettingsViewModel.resetSignSubject.send(true)
