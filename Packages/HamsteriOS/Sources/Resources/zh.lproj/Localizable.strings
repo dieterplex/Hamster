@@ -176,6 +176,17 @@
 "k_b.toolbar_remark" = "开启后建议调整工具栏高度为：40。\n（位置：键盘设置 -> 候选栏设置 -> 工具栏高度）";
 
 "k_b.space_settings" = "空格设置";
+"k_b.space_settings.loadingText" = "空格加载文字";
+"k_b.space_settings.loadingText_placeholder" = "加载文字";
+"k_b.space_settings.labelText" = "空格长显文字";
+"k_b.space_settings.labelText_placeholder" = "长显文字";
+"k_b.space_settings.text_remark" = "1. 仅对内置键盘有效。\n2.自定义键盘在配置文件中设置。";
+"k_b.space_settings.enable_loadingText" = "启用加载文字";
+"k_b.space_settings.showCurrentInputSchemaNameOnLoadingText" = "加载文字显示输入方案名";
+"k_b.space_settings.showCurrentInputSchemaName" = "长显显示输入方案名";
+"k_b.space_settings.enable_loadingText_remark" = "1. 仅对内置键盘有效。\n2.自定义键盘在配置文件中设置。";
+"k_b.space_settings.spaceDragSensitivity" = "移动光标灵敏度";
+"k_b.space_settings.spaceDragSensitivity_remark" = "空格移动光标的灵敏度指: 手指在屏幕移动多少个点，光标移动一位，所以数值越小，光标移动越快。";
 
 "k_b.disable_swipe" = "关闭划动显示文本";
 "k_b.disable_swipe_remark" = "关闭后，按键上不在显示划动文本。";
